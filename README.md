@@ -1,3 +1,14 @@
+
+# Datasets for Embodied Foundation Models (EFM-Datasets)
+
+<a href="https://www.tri.global/" target="_blank">
+ <img align="right" src="media/figs/tri-logo.png" width="20%"/>
+</a>
+
+EFM-Datasets is a repository containing various open-source datasets used by the TRI-ML research group. It provides a simple and clean interface that maps all supported datasets onto the same batch structure convention. This enables the seamless combination of datasets for applications such as [sim-to-real](https://arxiv.org/abs/2103.16694), [self-supervised learning](https://arxiv.org/abs/1905.02693), [multi-view geometry](https://arxiv.org/abs/2207.14287), [volumetric rendering](https://arxiv.org/abs/2304.02797), [zero-shot scale-aware depth estimation](), [domain adaptation](), and many more. 
+
+Although **EFM-Datasets** works as a standalone library, it was designed specifically to be used in conjunction with other TRI-ML's repositories, in particular [vidar](https://github.com/tri-ml/vidar), that uses it as a submodule; and [camviz](https://github.com/tri-ml/camviz), that is one of its submodules.
+
 # Installation
 
 ```
@@ -233,3 +244,21 @@ Please note that its [license](https://github.com/EPFL-VILAB/omnidata/blob/main/
 - Habitat-Matterport 3D Dataset: https://matterport.com/matterport-end-user-license-agreement-academic-use-model-data
 - Gibson Dataset of Spaces: http://svl.stanford.edu/gibson2/assets/GDS_agreement.pdf
 - 2D3DS: https://docs.google.com/forms/d/1Niyi45QTn0-nU3WKHjbswvndX7F2aaCpNWZOiJ7onYc
+
+
+# Related Publications
+
+### [Towards Zero-Shot Scale-Aware Monocular Depth Estimation](https://arxiv.org/abs/2306.17253) (ICCV 2023)
+Vitor Guizilini, Igor Vasiljevic, Dian Chen, Rares Ambrus, Adrien Gaidon
+
+**Abstract:** *Monocular depth estimation is scale-ambiguous, and thus requires scale supervision to produce metric predictions. Even so, the resulting models will be geometry-specific, with learned scales that cannot be directly transferred across domains. Because of that, recent works focus instead on relative depth, eschewing scale in favor of improved up-to-scale zero-shot transfer. In this work we introduce ZeroDepth, a novel monocular depth estimation framework capable of predicting metric scale for arbitrary test images from different domains and camera parameters. This is achieved by (i) the use of input-level geometric embeddings that enable the network to learn a scale prior over objects; and (ii) decoupling the encoder and decoder stages, via a variational latent representation that is conditioned on single frame information. We evaluated ZeroDepth targeting both outdoor (KITTI, DDAD, nuScenes) and indoor (NYUv2) benchmarks, and achieved a new state-of-the-art in both settings using the same pre-trained model, outperforming methods that train on in-domain data and require test-time scaling to produce metric estimates.*
+
+```
+@inproceedings{tri-zerodepth,
+  title={Towards Zero-Shot Scale-Aware Monocular Depth Estimation},
+  author={Guizilini, Vitor and Vasiljevic, Igor and Chen, Dian and Ambrus, Rares and Gaidon, Adrien},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month={October},
+  year={2023},
+}
+```
