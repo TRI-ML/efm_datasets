@@ -170,7 +170,7 @@ Please note the [license info](https://www.cvlibs.net/datasets/kitti/index.php) 
 
 ## DDAD
 
-Please go to DDAD's [official website](https://github.com/TRI-ML/DDAD) to download the data. A tiny version for quick experimentation can be found [here](https://tri-ml-public.s3.amazonaws.com/github/vidar/datasets/tiny/DDAD_tiny.tar).
+Please go to DDAD's [official website](https://github.com/TRI-ML/DDAD) to download the data. A tiny version for quick experimentation can be found [here](https://tri-ml-public.s3.amazonaws.com/github/vidar/datasets/tiny/DDAD_tiny.tar).  A pre-processed dataset compatible with our repository can also be found [here](https://tri-ml-public.s3.amazonaws.com/github/vidar/datasets/full/DDAD.tar).
 
 Please note the [license info](https://github.com/TRI-ML/DDAD#license) of DDAD:
 
